@@ -1,0 +1,21 @@
+{
+  "name": "mikk150/pcsc",
+  "description": "Library to communicate with PCSC smart-card readers",
+  "type": "library",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Mikk Tendermann",
+      "email": "mikk150@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "ext-PC/SC": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "mikk150\\pcsc\\": "src/"
+    }
+  }
+}
