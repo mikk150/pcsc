@@ -27,9 +27,14 @@ class Context
 
         $readers=[];
         foreach ($contextReaders as $reader) {
-            $readers[] = new Reader($this, $reader);
+            $readers[] = $this->getReaderByName($reader);
         }
         return $readers;
+    }
+
+    public function getReaderByName($name)
+    {
+        return new Reader($this, $name);
     }
 
     /**
